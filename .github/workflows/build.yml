@@ -9,15 +9,14 @@ jobs:
 build:
 name: Build (${{ matrix.target }})
 runs-on: ubuntu-latest
-
 strategy:
-  fail-fast: false
-  matrix:
-    target:
-      - Win64
-      - MacOS
-      - Android32
-      - Android64
+fail-fast: false
+matrix:
+target:
+- Win64
+- MacOS
+- Android32
+- Android64
 
 steps:
   - name: Checkout repository
