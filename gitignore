@@ -1,0 +1,10 @@
+build/
+build-*/
+cmake-build-*/
+out/
+*.geode
+*.dll
+*.so
+*.dylib
+.DS_Store
+Thumbs.db
